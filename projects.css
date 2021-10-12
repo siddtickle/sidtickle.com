@@ -1,0 +1,148 @@
+::-moz-selection {
+  background: yellow;
+}
+::selection {
+  background: yellow;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+  justify-content: space-between;
+}
+
+.socials img {
+  height: 20px;
+  width: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.navigation {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  display: flex;
+  flex-direction: row;
+  width: 467px;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.navigation a {
+  cursor: pointer;
+}
+
+.about-me {
+  text-decoration: none;
+}
+
+.projects {
+  text-decoration: underline;
+}
+
+.resume {
+  text-decoration: none !important;
+}
+
+a {
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* adapted from https://codepen.io/mahmudulhrabby/pen/GGqdvr?editors=1100 */
+
+.cards img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 50px;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: white;
+}
+
+.card_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.8s ease;
+
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: "Inter";
+  font-size: 30px;
+  width: 75%;
+  text-align: center;
+}
+
+/* #card-container:hover .card_title {
+  opacity: 1;
+}
+#card-container:hover .card-img {
+  color: sepia(90%);
+} */
+
+#card-container {
+  transition-property: inherit;
+  transition: 2s;
+}

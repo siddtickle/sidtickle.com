@@ -1,0 +1,101 @@
+::-moz-selection {
+  background: yellow;
+}
+::selection {
+  background: yellow;
+}
+
+.photo-nav {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.me {
+  width: 200px;
+  height: auto;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+  justify-content: space-between;
+}
+
+.socials img {
+  height: 20px;
+  width: auto;
+}
+
+.navigation {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  display: flex;
+  flex-direction: column;
+  height: 227px;
+  justify-content: space-between;
+}
+
+.navigation a {
+  cursor: pointer;
+}
+
+.about-me {
+  text-decoration: underline;
+}
+
+.projects {
+  text-decoration: none;
+}
+
+.resume {
+  text-decoration: none !important;
+}
+
+.about-me-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 320px;
+  height: 438px;
+  color: black;
+  margin-left: 68px;
+}
+
+a {
+  color: black;
+}
+
+.about-me-text h1 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 77px;
+  margin: 0;
+}
+
+.about-me-text h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
